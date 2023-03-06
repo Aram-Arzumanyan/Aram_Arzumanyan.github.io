@@ -1,0 +1,71 @@
+@import "../../assets/style/mixin.scss";
+
+.section_header {
+  padding: 0 45px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+
+  .glav {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+
+    &:hover {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      background-position: top;
+      background-size: 130px;
+    }
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #ccc;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    width: 400px;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-weight: 700;
+
+        &:hover {
+          color: #ccc;
+          cursor: pointer;
+          font-size: 25px;
+        }
+      }
+    }
+
+    @include screen(820px) {
+      display: none;
+    }
+  }
+  .burger {
+    display: none;
+    @include screen(820px) {
+      display: block;
+    }
+  }
+}

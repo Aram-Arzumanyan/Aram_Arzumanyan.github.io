@@ -1,0 +1,19 @@
+@import '../icon/style.css';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    color: inherit;
+
+}
+
+.G-container{
+    max-width: 1380;
+    width: 100%;
+    margin: 0 auto;
+   
+}
