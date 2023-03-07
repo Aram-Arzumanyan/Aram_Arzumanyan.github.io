@@ -26,15 +26,7 @@
         background-size: contain;
       }
     }
-   
-  }
-
-  .content2 {
-    width: 39%;
-    @include screen(1024px) {
-      width: 100%;
-    }
-     button {
+    button {
       padding: 15px 40px;
       margine-top:10px;
       background-color: #111;
@@ -50,4 +42,12 @@
         color: #111;
       }
     }
+  }
+
+  .content2 {
+    width: 39%;
+    @include screen(1024px) {
+      width: 100%;
+    }
+    
   }
