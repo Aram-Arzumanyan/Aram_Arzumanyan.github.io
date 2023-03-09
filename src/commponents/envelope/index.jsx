@@ -1,9 +1,27 @@
-import React from 'react';
+import React,{ useEffect, useRef, useState } from 'react';
 import './style.scss';
 
+
 export default function Envelope() {
+	const [scrol,setScrol]=useState(0)
+	
+	window.onscroll=()=>{
+		setScrol(Math.floor(window.scrollY))
+	}
+	useEffect(() => {
+	  if(scrol<=380|| scrol>=4000){
+		MyRef.current.style.visibility='hidden'
+	  }else{
+		MyRef.current.style.visibility='visible'
+	  }
+
+	}, [scrol])
+	
+	let MyRef=useRef()
+
   return (
-    <div>
+
+    <div ref={MyRef}>
   <div id="bg"></div>
 <div className="contact">
 	<div className="envelope">

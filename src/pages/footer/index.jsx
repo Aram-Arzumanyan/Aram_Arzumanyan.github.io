@@ -43,7 +43,7 @@ export default function Footer() {
       <hr />
       <div style={{ display: "flex" }}>
         <p>© Copyright 2023. Made by</p>
-        <a href=""> Aram Arzumanyan</a>
+        <a href="aram-coder@gmail.com"> Aram Arzumanyan</a>
       </div>
     </section>
   );
