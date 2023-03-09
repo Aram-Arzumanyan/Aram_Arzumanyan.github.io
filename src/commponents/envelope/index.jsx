@@ -16,7 +16,7 @@ export default function Envelope() {
 		<div className="cover"></div>
 		<div className="paper">
 			<a className="call" href="tel:+37497025990"><div className="i"></div>094-025-990</a>
-			<a className="mail" href="mailto:080898aram@gmail.com"> 080898aram@gmail.com</a>
+			<a className="mail" href="mailto:arzumanyanwebdeveloper@gmail.com"> arzumanyanwebdeveloper@gmail.com</a>
 		</div>
 	</div>
 </div>
